@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <main id="maincontenue">
+        <div id="log" style="display: none;"></div>
+        <div id="background">
+        </div>
+        <div id="logo">
+            <div id="debug" class="log log-top-right" style="display: none;"></div>
+            <div class="loading-container">
+                <div class ="loading-labels">
+                    <div id="INIT_BEFORE_MAP_LOADED-label" class="color-first">Carte 🗺️</div>
+                    <div id="MAP-label" class="color-second">Personnage 🚶</div>
+                    <div id="INIT_AFTER_MAP_LOADED-label" class a="color-third">Voiture 🚗</div>
+                    <div id="INIT_SESSION-label" class="color-fourth">Armes 🧨</div>
+                </div>
+                <div class="loading-bar-container">
+                    <div id="INIT_BEFORE_MAP_LOADED-bar" class="loading-bar bgcolor-first"></div>
+                    <div id="MAP-bar" class="loading-bar bgcolor-second"></div>
+                    <div id="INIT_AFTER_MAP_LOADED-bar" class="loading-bar bgcolor-third"></div>
+                    <div id="INIT_SESSION-bar" class="loading-bar bgcolor-fourth"></div>
+                </div>
+            </div>
+        </div>
+        <div id="boxmutebtn">
+            <label id="labelmutebtn">
+                <input type="checkbox" id="music-toggle" checked>
+                <div>
+                    <span class="on">ON</span>
+                    <span class="off">OFF</span>
+                </div>
+                
+            </label>
+        </div>
+        <div id="boxtouchemutemusique">
+            <div>
+                <img src="media/espace.png">
+            </div>
+            <span>Pour activer / déstiver la musique</span>
+        </div>
+    </main>
+
+    <div>
+        <div id="boxvideos">
+            <video id="videos" muted autoplay loop>
+                <source src="vid/esx_loopps.webm" type="video/webm" />
+            </video>
+        </div>
+    
+        <audio id="background-music" loop autoplay>
+            <source src="vid/esx_loopp.mp3">
+        </audio>
+    </div>
+
+</body>
+
+</html>
+<script src="./script/index.js" type="text/javascript"></script>

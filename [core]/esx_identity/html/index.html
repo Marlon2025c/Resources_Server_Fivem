@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <link href="css/style.css" rel="stylesheet" />
+
+        <title>ESX Identity</title>
+    </head>
+
+    <body class="none" onkeydown="TriggeredKey(this)">
+        <div class="dialog">
+            <div class="title"><b>SpaziaCity</b></div>
+            <form id="register" name="register" action="#">
+                <div style="color: rgb(46, 187, 205); font-size: 12px; font-family: 'Gill Sans', sans-serif">Prénom</div>
+                <input id="firstname" type="text" class="" name="firstname" placeholder="Prénom" minlength="3" maxlength="8" pattern="[a-zA-Z]*" /><br />
+                <div style="color: rgb(46, 187, 205); font-size: 12px; font-family: 'Gill Sans', sans-serif">Nom de famille</div>
+                <input id="lastname" type="text" class="" name="lastname" placeholder="Nom de famille" minlength="3" maxlength="10" pattern="[a-zA-Z]*" /><br />
+                <div style="color: rgb(46, 187, 205); font-size: 12px; font-family: 'Gill Sans', sans-serif">Date de naissance (MM/JJ/AAAA)</div>
+                <input id="dateofbirth" type="text" name="dateofbirth" placeholder="Date de naissance (MM/JJ/AAAA)" maxlength="10" oninput="formatDate(this)" /><br />
+                <div style="color: rgb(46, 187, 205); font-size: 12px; font-family: 'Gill Sans', sans-serif">Taille</div>
+                <input id="height" type="number" class="" name="height" min="120" max="220" placeholder="Taille (cm)" /><br />
+                <center>
+                    <div class="radio-toolbar">
+                        <input type="radio" id="radiom" name="sex" value="m" checked />
+                        <label for="radiom">Homme</label>
+
+                        <input type="radio" id="radiof" name="sex" value="f" />
+                        <label for="radiof">Femme</label>
+                    </div>
+                </center>
+                <button id="submit" type="submit">
+                    <font size="4px">Creer son Personnage</font>
+                </button>
+            </form>
+            <center>
+                <font size="1px" color="green">
+                    Si le bouton Soumettre ne fonctionne pas, veuillez vous assurer que vous avez correctement saisi les champs.</font>
+            </center>
+        </div>
+
+        <script>
+            function TriggeredKey(e) {
+                var keycode;
+                if (window.event) keycode = window.event.keyCode;
+                if (window.event.keyCode === 13 || window.event.keyCode === 27) return false;
+            }
+
+            function formatDate(input) {
+                const value = input.value.replace(/\D/g, ''); // Supprime tous les caractères non numériques
+
+                if (value.length >= 2) {
+                    let month = value.substr(0, 2);
+                if (parseInt(month) > 12) {
+                // Si le mois est supérieur à 12, réduisez-le à 12 (maximum autorisé)
+                month = '12';
+                }
+
+                let formattedValue = value;
+
+                if (value.length >= 4) {
+                    formattedValue = value.replace(/^(\d{2})(\d{2})(\d{0,4})/, '$1/$2/$3');
+                } else if (value.length === 3) {
+                    formattedValue = value.replace(/^(\d{2})(\d{1})(\d{0,4})/, '$1/$2');
+                } else {
+                    formattedValue = month + value.substr(2);
+                }
+                input.value = formattedValue;
+                } else {
+                    input.value = value;
+                }
+            }
+        </script>
+        <script src="js/script.js" defer></script>
+    </body>
+</html>
