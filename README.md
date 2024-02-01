@@ -13,7 +13,8 @@ Bienvenue dans ce dépôt contenant des scripts personnalisés pour un serveur F
    ```
 4. Redémarrez votre serveur FiveM.
 
-📦 Scripts disponibles
+## 📦 Scripts disponibles
+
 Base ESX Legacy 1 - J'ai utiliser la base de ESX Legacy pour commencer le projet.
 
 HUD 7even_Speedo 2 - hud de compteur pour voiture.
@@ -26,11 +27,11 @@ MECANO Bryan_paintjob-main 5 - Il et la pour donner tu réalise au Mecano.
 
 MECANO Renzu_customs (Modifier) 6 - Ce script et Modifier par mes sois j'ai aujouter plusieur ajout naicesire a un bon Job Mecano.
 
-🤝 Contribution
+## 🤝 Contribution
 Les contributions sont les bienvenues. N'hésitez pas à ouvrir une issue ou une pull request.
 
-✍️ Auteurs
+## ✍️ Auteurs
 Marlon2025c - Créateur principal
 
-📄 Licence
+## 📄 Licence
 Ce projet est sous licence MIT.
