@@ -5,13 +5,14 @@ Bienvenue dans ce dépôt contenant des scripts personnalisés pour un serveur F
 ## 🚀 Installation
 
 1. Clonez ce dépôt dans le répertoire `resources` de votre serveur FiveM :
-   ```bash
+   ````bash
    git clone https://github.com/votre-utilisateur/scripts-fivem.git Resources_Server_Fivem ```
+   ````
 2. Ajoutez le script au fichier server.cfg :
-     ```ensure resources/addons
-        ensure resources/esx_addons
+   ```ensure resources/addons
+      ensure resources/esx_addons
    ```
-4. Redémarrez votre serveur FiveM.
+3. Redémarrez votre serveur FiveM.
 
 ## 📦 Scripts disponibles
 
@@ -28,10 +29,13 @@ MECANO Bryan_paintjob-main 5 - Il et la pour donner tu réalise au Mecano.
 MECANO Renzu_customs (Modifier) 6 - Ce script et Modifier par mes sois j'ai aujouter plusieur ajout naicesire a un bon Job Mecano.
 
 ## 🤝 Contribution
-Les contributions sont les bienvenues. N'hésitez pas à ouvrir une issue ou une pull request.
+
+Les contributions sont les bienvenues. N'hésitez pas à ouvrir une issue ou une pull request...
 
 ## ✍️ Auteurs
+
 Marlon2025c - Créateur principal
 
 ## 📄 Licence
+
 Ce projet est sous licence MIT.
